@@ -6,6 +6,15 @@ body {
     position: relative;
 }
 
+body::after{
+    content: '';
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(180deg, rgba(20,20,20,1) 40%, rgba(20,20,20,0) 100%);
+}
+
 .wrapper {
     display: flex;
     height: 100%;
@@ -30,11 +39,11 @@ h1 {
 
 @keyframes scroll {
     from {
-        transform: translatez(0) rotateX(14deg);
+        transform: translatez(0) rotateX(12deg);
         top: 0;
     }
     to {
         top: -16000px;
-        transform: translateZ(-4000px) rotateX(15deg);
+        transform: translateZ(-4000px) rotateX(13deg);
     }
 }
