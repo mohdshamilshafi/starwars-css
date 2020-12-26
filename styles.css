@@ -1,0 +1,40 @@
+body {
+    background: rgb(20, 20, 20);
+    margin: 30% 0 0 0;
+    overflow: hidden;
+    font-family: 'Roboto';
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+.text {
+    color: #ffc909;
+    font-size: 3vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: scroll 30s linear forwards;
+}
+
+h1 {
+    text-align: center;
+}
+
+@keyframes scroll {
+    from {
+        transform: translatez(0) rotateX(14deg);
+        top: 0;
+    }
+    to {
+        top: -16000px;
+        transform: translateZ(-4000px) rotateX(15deg);
+    }
+}
